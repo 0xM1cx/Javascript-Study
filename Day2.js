@@ -5,7 +5,7 @@ function ifLegal(){
     console.log("Welcome to our Wine Store");
     console.log("In order to but some wine you need to be over 18");
     
-    UserInput = Number(prompt("How old are you: "));
+    let UserInput = Number(prompt("How old are you: "));
     
     
     if (UserInput >= 18) {
@@ -18,6 +18,16 @@ function ifLegal(){
 function getLargerInt(){
     const prompt = require('prompt-sync')({sigint: true});
 
-    
+    let intOne = prompt("First Number: ");
+    let intTwo = prompt("Second Number: ");
+
+    if (intOne > intTwo){
+        console.log(`${intOne} is larger`);
+    } else if (intOne < intTwo) {
+        console.log(`${intTwo} in Larger`);
+    }else{
+        console.log(`${intOne} and ${intTwo} are equal`)
+    }
 }
-    
+
+getLargerInt();
