@@ -50,6 +50,8 @@ function getSign(){
     }
 }
 
+
+
 function main(){
     const prompt = require('prompt-sync')({sigint: true});
     console.log("Type the number of the function you want to run");
