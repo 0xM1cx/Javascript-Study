@@ -30,4 +30,40 @@ function getLargerInt(){
     }
 }
 
-getLargerInt();
+
+function getSign(){
+    const prompt = require('prompt-sync')({sigint: true});
+
+    let intOne = prompt("First Number: ");
+    let intTwo =  prompt("Second Number: ");
+    let intThree = prompt("Third Number: ");
+
+    let array = [];
+    array.push(intOne, intTwo, intThree);
+
+    for (let i = 0; i < array.length; i++){
+        if (array[i] < 0) {
+            console.log(`The sign for ${array[i]} is -(Negative)`);
+        }else{
+            console.log(`The sign for ${array[i]} is +(positive)`);
+        }
+    }
+}
+
+function main(){
+    const prompt = require('prompt-sync')({sigint: true});
+    console.log("Type the number of the function you want to run");
+    console.log("1 => ifLegal()");
+    console.log("2 => getLargerInt()");
+    console.log("3 => getSign()");
+    let userInput = prompt("Your choice: ");
+
+    if (userInput == 1){
+        ifLegal();
+    } else if (userInput == 2){
+        getLargerInt();
+    } else if (userInput == 3){
+        getSign();
+    }
+
+}
