@@ -50,3 +50,22 @@ function printValI(prompt){
     }
 }
 
+function getCorrectName(prompt) {
+    let input = String(prompt("Name? "));
+    
+    switch(input){
+        case "Shawn": 
+            console.log(`Welcome back ${input}`);
+            break;
+        case "Bucky": 
+            console.log(`Welcome back ${input}`);
+            break;
+        default:
+            console.log(`Welcome ${input}`);
+    }
+}
+
+
+getCorrectName(prompt);
+
+
