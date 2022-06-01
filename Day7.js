@@ -13,4 +13,16 @@ function countDown(number) {
     }
 }
 
-countDown(4)
+function accessingObjectProperties() {
+    var profile = {
+        name: "Shawn Michael Sudaria",
+        age: 17,
+        future_career: 'Cybersecurity Engineer'
+    };
+
+    console.log(`Welcome ${profile.name}`);
+    console.log(`Just to confirm you are now ${profile.age} and in the future you want to be a ${profile.future_career}`);
+
+}
+
+accessingObjectProperties();
