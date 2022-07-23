@@ -14,8 +14,31 @@ function calculateFactorial() {
 
 // question 2
 function findGCD(){
-    var numberOne = prompt("First positive number: ");
-    var numberTwo = prompt("Second positive number: ");
+    let numberOne = prompt("First positive number: ");
+    let numberTwo = prompt("Second positive number: ");
 
-    
+    var numOneFactors = [];
+    var numTwoFactors = [];
+    var GCD = [];
+    for(let i = 1; i<= 100; ++i){
+        if (numberOne / i == 0){
+            numOneFactors.push(i);
+        }
+
+        if (numberTwo / i == 0) {
+            numTwoFactors.push(i);
+        }
+    }
+    for(let i = 0; i <= numOneFactors.length; ++i){
+        for(let b = 0; b <= numTwoFactors.length; ++b){
+            if(numOneFactors[i] === numTwoFactors[b]){
+                GCD.push(i);
+            }
+        }
+    }
+
+    console.log(GCD);
 }
+
+
+console.log(findGCD());
