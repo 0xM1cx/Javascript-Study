@@ -13,6 +13,7 @@ function calculateFactorial() {
 }
 
 // question 2
+// This problem is not yet finished !!
 function findGCD(){
     let numberOne = prompt("First positive number: ");
     let numberTwo = prompt("Second positive number: ");
