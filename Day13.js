@@ -5,6 +5,7 @@ function Student(){
 }
 
 let studentA = new Student();
+let studentB = new Student();
 
 // Adding new property
 studentA.gender = "Male";
@@ -15,4 +16,13 @@ studentA.welcomeMessage = function() {
 
 studentA.welcomeMessage();
 console.log(`You are now ${studentA.age}`);
+// welcome student B
+studentB.greet = function(){
+    console.log(`Welcome ${studentB.name}`)
+}
+
+studentB.greet();
+
+
+
 
