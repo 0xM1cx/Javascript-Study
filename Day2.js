@@ -1,4 +1,5 @@
-function ifLegal(){
+function ifLegal()
+{
 
     const prompt = require('prompt-sync')({sigint: true});
     
@@ -15,7 +16,8 @@ function ifLegal(){
     }
 }
 
-function getLargerInt(){
+function getLargerInt()
+{
     const prompt = require('prompt-sync')({sigint: true});
 
     let intOne = prompt("First Number: ");
@@ -31,7 +33,8 @@ function getLargerInt(){
 }
 
 
-function getSign(){
+function getSign()
+{
     const prompt = require('prompt-sync')({sigint: true});
 
     let intOne = prompt("First Number: ");
@@ -50,22 +53,47 @@ function getSign(){
     }
 }
 
+function dayTwoDataTypes()
+{
+    let immutable = 'Shawn Michael';
+    console.log(immutable);
+    immutable = 'Shawn Michael A. Sudaria';
+    console.log(immutable);
 
+    let studentOne = {
+        name: "Shawn Michael A. Sudaria",
+        course: "BSIT",
+        coutry: "Philippines"
+    }
 
-function main(){
+    console.log(studentOne.name);
+}
+
+function main()
+{
     const prompt = require('prompt-sync')({sigint: true});
     console.log("Type the number of the function you want to run");
     console.log("1 => ifLegal()");
     console.log("2 => getLargerInt()");
     console.log("3 => getSign()");
+    console.log("4 => dayTwoDataTypes()");
     let userInput = prompt("Your choice: ");
 
-    if (userInput == 1){
+    if (userInput == 1)
+    {
         ifLegal();
-    } else if (userInput == 2){
+    } 
+    else if (userInput == 2)
+    {
         getLargerInt();
-    } else if (userInput == 3){
+    } 
+    else if (userInput == 3)
+    {
         getSign();
+    } 
+    else if(userInput == 4)
+    {
+        dayTwoDataTypes();
     }
 
 }
