@@ -3,3 +3,10 @@ const studentName = ["Shawn", "Jason", "Kevin", "Crystal", "Zyra"];
 
 console.log(studentName.push("Kevin"));
 console.log(studentName);
+
+
+// Edabit challenges
+function matchHouses(steps)
+{
+       
+}
