@@ -46,12 +46,13 @@ function constructorPractice(){
 // }
 
 
-function multiplicationTable(){
-    const prompt = require('prompt-sync')({sigint: true});
-    let size = prompt("Size of the table ?");
-    for(let i = 1; i <= size; i++){
-        process.stdout.write(i);
-    }
+function getArraySum(arr){
+    sum = 0
+    arr.forEach(element => {
+        sum += element;
+    })
+
+    return sum;
 }
 
-multiplicationTable();
+console.log(`The sum of the array is ${getArraySum([1, 2, 3, 4, 5, 6])}`);
