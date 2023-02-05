@@ -1,19 +1,57 @@
-// Methods
-var total = 0
-const student = {
-    name: "Shawn",
-    age: "18",
-    school: "EVSU",
-    total_funds: function(income_source) {
-        income_source.forEach(element => {
-            total += element;
-        });
-
-        return total;
+// Methods and accessing the methods property using the this keyword
+function methodsPractice(){
+    const student = {
+        total: 0,
+        name: "Shawn",
+        age: 18,
+        school: "EVSU",
+        total_funds: function(income_source) {
+            income_source.forEach(element => {
+                this.total += element;
+            });
+    
+            console.log(`${this.name}'s Total funds are ${this.total}`);
+        }
     }
+    
+    student.greet = function(name){
+        console.log(`Welcome ${name}`);
+    }
+    
+    
+    student.greet("Shawn");
+    
+    student.total_funds([1, 2, 3, 4, 5, 6])
+}
+
+
+// constructor function
+function constructorPractice(){
+    function Student(){
+        this.name = "Shawn",
+        this.age = 18,
+        this.school = "EVSU"
     }
 
+    let BSIT_Student = new Student();
+    console.log(`Welcome to ${BSIT_Student.school} Mr. ${BSIT_Student.name}`);
+}
 
 
 
-console.log(`Shawn total funds are ${student.total_funds([213, 12, 41, 31])}`);
+// for(let i = 0; i <= 10; i++){
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
+// }
+
+
+function multiplicationTable(){
+    const prompt = require('prompt-sync')({sigint: true});
+    let size = prompt("Size of the table ?");
+    for(let i = 1; i <= size; i++){
+        process.stdout.write(i);
+    }
+}
+
+multiplicationTable();
