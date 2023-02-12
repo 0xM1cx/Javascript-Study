@@ -18,4 +18,22 @@ function multidimensionalArrays(){
     }
 }
 
-multidimensionalArrays();
+function forInLoop(){
+    let names = ["Shawn", "Crystal", "John", "Carl", "Nikki", ""]
+    for(let value in names){
+        console.log(value);
+    }
+
+    for(let char in names[0]){
+        console.log(names[0][char]);
+    }
+}
+
+function numberTest(){
+    console.log(2/0);
+    console.log(-2/0);
+    console.log(0xff);
+    console.log(5e5);
+}
+
+numberTest();
