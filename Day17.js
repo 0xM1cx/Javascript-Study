@@ -9,4 +9,13 @@ function test(){
     console.log(names[4]);
 }
 
-test();
+function multidimensionalArrays(){
+    let arr = [[1, 2, 4], [123, 41, 512], [54, 29, 89]];
+    for(let j of arr){
+        for(let b of j){
+            console.log(b);
+        }
+    }
+}
+
+multidimensionalArrays();
