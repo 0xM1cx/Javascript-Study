@@ -1,4 +1,3 @@
-const { couldStartTrivia } = require("typescript");
 
 function Student(){
     this.name = "Shawn"
@@ -6,10 +5,7 @@ function Student(){
 
 Student.prototype = {name: "Shawn Michael"};
 Student.prototype = {age: 18};
-
+Student.prototype.gender = "Male";
 
 const stud1 = new Student();
 
-console.log(Student.prototype);
-console.log(stud1.name);
-console.log(stud1.age);
