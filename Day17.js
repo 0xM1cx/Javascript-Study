@@ -1,3 +1,7 @@
+function anotherTest(){
+    // Sample Data here
+}
+
 function test(){
     let names = ["Shawn", "Crystal", "Zyra"]
     names.name = "Justing";
