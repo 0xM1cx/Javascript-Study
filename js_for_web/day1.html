@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAY 1 JS Practice</title>
+        <script>
+            function changeText(){
+                let name = window.prompt("What is your name");
+                let output = document.querySelector("#output");
+                output.innerHTML = name;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="changeText()">
+            Change Text
+        </button>
+        <p id="output">Hello</p>
+    </body>
+</html>
