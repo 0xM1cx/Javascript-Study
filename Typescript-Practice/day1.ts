@@ -1,9 +1,15 @@
 
-export 
-function test(name: string){
+// export 
+// function test(name: string){
     
-    return name
+//     return name
+// }
+
+// console.log(`Welcome ${test("Shawn")}`)
+
+
+function two_Fer(name:string){
+    console.log(`One for ${name}, one for me.`);
 }
 
-console.log(`Welcome ${test("Shawn")}`)
-
+two_Fer("Alice");

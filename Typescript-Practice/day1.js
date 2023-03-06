@@ -1,8 +1,9 @@
-"use strict";
-exports.__esModule = true;
-exports.test = void 0;
-function test(name) {
-    return name;
+// export 
+// function test(name: string){
+//     return name
+// }
+// console.log(`Welcome ${test("Shawn")}`)
+function two_Fer(name) {
+    console.log("One for ".concat(name, ", one for me."));
 }
-exports.test = test;
-console.log("Welcome ".concat(test("Shawn")));
+two_Fer("Alice");
