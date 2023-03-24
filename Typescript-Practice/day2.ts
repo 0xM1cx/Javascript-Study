@@ -1,6 +1,6 @@
 
 
-let userName:string = annotationPractice();
+let userName:string = "Shawn Michael Sudaria";
 let hoursRendered:number = 10;
 let loan:number = 100.00;
 let health_insurance:number = 100.00
