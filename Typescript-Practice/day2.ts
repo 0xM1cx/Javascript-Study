@@ -1,17 +1,4 @@
-// Type annotations
-function annotationPractice(){
-    let userName:string = "Shawn Michael A. Sudaaria";
-    let age:number = 18;
-    let girlfriendName:string = "Zyra Dauplo";
-    
-    
-    
-    // for(let i:number = 1; i<=10; i++){
-    //     console.log(`I love you ${girlfriendName}`);
-    // }
 
-    return userName;
-}
 
 let userName:string = annotationPractice();
 let hoursRendered:number = 10;
