@@ -1,6 +1,5 @@
 const prompt = require('prompt-sync')({sigint: true});
 
-
 function displaySum(prompt){
 
     let sum = 0;
@@ -67,5 +66,3 @@ function getCorrectName(prompt) {
 
 
 getCorrectName(prompt);
-
-
