@@ -12,7 +12,7 @@ user = {
   	age: 18,
   	isloggedIn: false
 };
-
+	
 
 function LoginPage() {
 	const [cur, setval] = useState(0);
